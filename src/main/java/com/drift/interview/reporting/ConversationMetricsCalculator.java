@@ -15,10 +15,10 @@ public class ConversationMetricsCalculator {
     List<Message> messages = conversation.getMessages();
 
 
-    long responseTimeSum = 0; // the sum of all responses in conversation
-    long responseCount = 0; // the count of all responses in conversation
-    long userResponse = 0; // take the time of the user response
-    long averageResponse = 0; // the average response time
+    double responseTimeSum = 0; // the sum of all responses in conversation
+    double responseCount = 0; // the count of all responses in conversation
+    double userResponse = 0; // take the time of the user response
+    double averageResponse = 0; // the average response time
 
 
     boolean isTeamMember = true; // initialize isTeamMember to true because we have to calculate the response time starting from the user
@@ -57,7 +57,7 @@ public class ConversationMetricsCalculator {
     }
 
 
-    // implement me!
+
 
     return ConversationResponseMetric.builder()
         .setConversationId(conversation.getId())
